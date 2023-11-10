@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Events</title>
+    <link rel="icon" href="Recursos_Amazing_Events_Task_1/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+</head>
+    <header class=" bg-secondary lh-60 p-3">
+      <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+          <div class="container">
+          <img src="Recursos_Amazing_Events_Task_1/amazing_brand.png" class="img-thumbnail imgamazing " alt="...">
+          </div>
+          <div class="container-fluid">
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active fs-4" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link fs-4" href="upcomingevents.html">upcoming events</a>
+                <a class="nav-link fs-4" href="pastevents.html">past events</a>
+                <a class="nav-link fs-4" href="contact.html">contact</a>
+                <a class="nav-link fs-4" href="#">stats</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-inner c-item1">
+          <div class="carousel-item active">
+            <img src="Recursos_Amazing_Events_Task_1/optional_banner_1.jpg" class="d-block w-100 c-item2" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Stats</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Recursos_Amazing_Events_Task_1/optional_banner_2.jpg" class="d-block w-100 c-item2" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Stats</h2>      
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Recursos_Amazing_Events_Task_1/optional_banner_3.jpg" class="d-block w-100 c-item2" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Stats</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Recursos_Amazing_Events_Task_1/optional_banner_4.jpg" class="d-block w-100 c-item2" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Stats</h2>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Recursos_Amazing_Events_Task_1/optional_banner_5.jpg" class="d-block w-100 c-item2" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Stats</h2>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div id="contenedorTable" class="container p-5">
+        <table id="eventTable" class="table table-bordered border-black">
+         <table id="eventTable" class="table table-bordered border-black">
+          <thead>
+            <tr>
+              <th colspan="3" class="table-active">Events Statistics</th>
+            </tr>
+            <tr>
+              <td class="fw-bold">Events with highest % of assistance</td>
+              <td class="fw-bold">Events with lowest % of assistance</td>
+              <td class="fw-bold">Events with larger capacity</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="highestAssistanceEvent"></td>
+              <td id="lowestAssistanceEvent"></td>
+              <td id="largerCapacityEvent"></td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th colspan="3" class="table-active">Upcoming Events Statistics by Category</th>
+            </tr>
+            <tr>
+              <td class="fw-bold">Category</td>
+              <td class="fw-bold">Previous</td>
+              <td class="fw-bold">percentage of assistance</td>
+            </tr>
+          </thead>
+          <tbody id="upcomingEventsBody"></tbody>
+          <thead>
+            <tr>
+              <th colspan="3" class="table-active">Past Events Statistics by Category</th>
+            </tr>
+            <tr>
+              <td class="fw-bold">Category</td>
+              <td class="fw-bold">Previous</td>
+              <td class="fw-bold">percentage of assistance</td>
+            </tr>
+          </thead>
+          <tbody id="pastEventsBody"></tbody>
+
+         </table>
+        </table>
+      </div>
+
+    </main>
+       
+    <footer class=" d-flex justify-content-between align-items-center bg-secondary p-3">
+      <div class="container d-flex flex-lg-row ">
+        <div><img src="Recursos_Amazing_Events_Task_1/facebook.png" class="img-thumbnail" alt="..."></div>
+      <div><img src="Recursos_Amazing_Events_Task_1/instagram.png" class="img-thumbnail" alt="..."></div>
+      <div><img src="Recursos_Amazing_Events_Task_1/whatsapp.png" class="img-thumbnail" alt="..."></div>
+      <div class="container d-flex justify-content-end text-capitalize fs-4"><h4>@nasser torres herrera</h4></div>
+      
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script type="module" src="./stats.js"></script>
+</body>
+</html>
